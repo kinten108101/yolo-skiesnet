@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # keras-yolo3-Mobilenet
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
@@ -167,3 +168,7 @@ Please cite MobileNet-YOLO in your publications if it helps your research:
      year = {2017}
 }
 ```
+=======
+# yolo-skiesnet
+PathfindingCam's Recognition core, built on Intel HD Integrated Graphics 6200
+>>>>>>> cfc194e8b00676076c07bb55d7dc433a467da821
