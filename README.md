@@ -1,4 +1,10 @@
-<<<<<<< HEAD
+# Project PathfindingCam
+
+
+First build on Intel HD Graphics 6200
+Added: image labeller (more integration), remake,
+Testing on Google Cloud failed due to budgetary issues (should have known better).
+
 # keras-yolo3-Mobilenet
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
