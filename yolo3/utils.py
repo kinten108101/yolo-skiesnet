@@ -3,6 +3,7 @@
 from functools import reduce
 
 from PIL import Image
+from PIL import ImageFile
 import numpy as np
 from matplotlib.colors import rgb_to_hsv, hsv_to_rgb
 
@@ -35,6 +36,7 @@ def rand(a=0, b=1):
 
 def get_random_data(annotation_line, input_shape, random=True, max_boxes=20, jitter=.3, hue=.1, sat=1.5, val=1.5, proc_img=True):
     '''random preprocessing for real-time data augmentation'''
+    ImageFile.LOAD_TRUNCATED_IMAGES = True
     line = annotation_line.split()
     image = Image.open(line[0])
     iw, ih = image.size

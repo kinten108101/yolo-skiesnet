@@ -14,10 +14,17 @@ from yolo3.utils import get_random_data
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 def _main():
-    train_path = 'car_train.txt'
-    val_path = 'car_val.txt'
+    """
+        train_path = '2007_train.txt'
+    val_path = '2007_val.txt'
     log_dir = 'logs/carMobilenet/001_Mobilenet_finetune/'
-    classes_path = 'model_data/car_classes.txt'
+    classes_path = 'model_data/voc_classes.txt'
+    anchors_path = 'model_data/yolo_anchors.txt'
+    """
+    train_path = '2007_train.txt'
+    val_path = '2007_val.txt'
+    log_dir = 'logs/'
+    classes_path = 'model_data/voc_classes.txt'
     anchors_path = 'model_data/yolo_anchors.txt'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
@@ -198,5 +205,3 @@ def data_generator_wrapper(annotation_lines, batch_size, input_shape, anchors, n
 
 if __name__ == '__main__':
     _main()
-
-

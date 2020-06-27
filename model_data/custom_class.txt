@@ -1,0 +1,6 @@
+box
+stool
+desk
+tree
+human
+car
